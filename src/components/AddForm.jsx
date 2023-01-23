@@ -58,7 +58,7 @@ export default function AddForm() {
         {itemList.map((item, index) => {
           return (
             <ListItem
-              key={index}
+              key={crypto.randomUUID()}
               index={index}
               content={item}
               handleDelete={handleDelete}
